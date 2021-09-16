@@ -384,7 +384,7 @@ template {
 
 .navbar__search {
   margin-right: auto;
-  margin-left: 108px;
+  margin-left: 119px;
 }
 
 .navbar-bottom {
@@ -432,7 +432,7 @@ template {
 .search__input {
   width: 350px;
   height: 100%;
-  padding-left: 23px;
+  padding-left: 12px;
   padding-right: 75px;
   background-color: #F5FAFE;
   border: none;
@@ -499,8 +499,7 @@ template {
     margin-left: auto;
   }
   .navbar-menu {
-    padding-top: 22px;
-    padding-bottom: 22px;
+    padding: 22px 14px;
   }
   .navbar-menu__link {
     font-size: 12px;
@@ -512,13 +511,17 @@ template {
   width: 340px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .container {
     max-width: 576px;
     width: 92%;
   }
   .navbar__search, .navbar-menu, .navbar__user {
     display: none;
+  }
+  .search__button {
+    top: 1px;
+    right: 13px;
   }
   .menu-button {
     display: -webkit-box;
@@ -551,6 +554,12 @@ template {
 @media (max-width: 576px) {
   .logo {
     width: 99px;
+  }
+}
+
+@media (max-width: 320px) {
+  .navbar-top {
+    padding: 22px 7px;
   }
 }
 /*# sourceMappingURL=style.css.map */
