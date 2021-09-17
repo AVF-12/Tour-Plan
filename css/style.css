@@ -693,29 +693,26 @@ template {
 }
 
 @media (max-width: 576px) {
-  .logo {
-    width: 99px;
-  }
-}
-
-@media (max-width: 320px) {
   .navbar-top {
     padding: 22px 7px;
   }
   .breadcrumb-list {
     padding: 25px 6px 19px 6px;
   }
-  .hotel {
+  .logo {
+    width: 99px;
+  }
+  .logo .hotel {
     padding: 0 19px 70px 9px;
   }
-  .hotel-info__offer {
+  .logo-info__offer {
     margin-left: 1px;
   }
-  .hotel-info__name {
+  .logo-info__name {
     margin-top: 8px;
   }
-  .hotel-info__description {
-    margin-top: -1px;
+  .logo__description {
+    margin-top: -4px;
   }
 }
 /*# sourceMappingURL=style.css.map */
