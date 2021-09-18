@@ -385,7 +385,7 @@ template {
 
 .navbar__search {
   margin-right: auto;
-  margin-left: 119px;
+  margin-left: 108px;
 }
 
 .navbar-bottom {
@@ -433,7 +433,7 @@ template {
 .search__input {
   width: 350px;
   height: 100%;
-  padding-left: 12px;
+  padding-left: 22px;
   padding-right: 75px;
   background-color: #F5FAFE;
   border: none;
@@ -446,7 +446,7 @@ template {
 .search__button {
   position: absolute;
   top: 0;
-  right: 9px;
+  right: 0;
   width: 65px;
   height: 100%;
   border: none;
@@ -564,6 +564,10 @@ template {
       flex-basis: 100%;
 }
 
+.stars img {
+  margin: 0 -1px;
+}
+
 .offer {
   font-size: 10px;
   line-height: 13px;
@@ -592,6 +596,11 @@ template {
 .rating__counter {
   font-size: 14px;
   line-height: 18px;
+  font-weight: 700;
+}
+
+.rating__counter-small {
+  font-size: 10px;
 }
 
 @media (max-width: 1200px) {
@@ -607,35 +616,38 @@ template {
   .logo {
     width: 132px;
   }
+  .search__input {
+    width: 340px;
+  }
   .navbar-top {
     padding-top: 30px;
     padding-bottom: 30px;
   }
   .navbar__search {
-    margin-left: auto;
+    margin-left: 48px;
   }
   .navbar-menu {
-    padding: 22px 14px;
+    padding: 20px 14px 22px;
   }
   .navbar-menu__link {
     font-size: 12px;
     line-height: 15px;
   }
-  .search__input {
-    width: 340px;
+  .hotel-description {
+    margin-top: -3px;
   }
 }
 
 @media (max-width: 767px) {
   .container {
     max-width: 576px;
-    width: 92%;
+    width: 88%;
   }
   .navbar__search, .navbar-menu, .navbar__user {
     display: none;
   }
   .search__button {
-    top: 0;
+    top: 1;
     right: 13px;
   }
   .menu-button {
@@ -681,7 +693,7 @@ template {
     width: 100%;
   }
   .hotel-info__name {
-    margin-top: 10px;
+    margin-top: 8px;
     margin-bottom: 0;
   }
   .hotel-info__rating {
@@ -691,31 +703,22 @@ template {
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
             order: -1;
-    margin-left: 0;
+    margin-left: 2px;
   }
 }
 
 @media (max-width: 576px) {
   .navbar-top {
-    padding: 22px 7px;
+    padding: 22px 0;
   }
   .breadcrumb-list {
-    padding: 25px 6px 19px 6px;
+    padding: 25px 0 7px;
   }
   .logo {
     width: 99px;
   }
-  .logo .hotel {
-    padding: 0 19px 70px 9px;
-  }
-  .logo-info__offer {
-    margin-left: 1px;
-  }
-  .logo-info__name {
-    margin-top: 8px;
-  }
-  .logo__description {
-    margin-top: -4px;
+  .stars {
+    margin: 0 18px 3px;
   }
 }
 /*# sourceMappingURL=style.css.map */
