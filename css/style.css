@@ -814,10 +814,6 @@ template {
   overflow: hidden;
 }
 
-.map__google {
-  width: 100%;
-}
-
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -992,6 +988,9 @@ template {
   .hotel__slider {
     margin-bottom: 20px;
     margin-top: 18px;
+  }
+  #yandexmap {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
