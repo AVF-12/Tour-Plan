@@ -1,7 +1,7 @@
 const swiper = new Swiper('.swiper', {
   // Optional parameters
   loop: true,
-  keyboard: {
+    keyboard: {
     enabled: true,
     onlyInViewport: false,
   },
