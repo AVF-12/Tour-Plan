@@ -695,7 +695,7 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 9px;
+  margin-bottom: 6px;
 }
 
 .booking__price {
@@ -769,7 +769,7 @@ template {
 .booking__heading {
   font-style: normal;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 25px;
 }
 
@@ -812,6 +812,10 @@ template {
   height: 213px;
   border-radius: 10px;
   overflow: hidden;
+}
+
+.map__google {
+  width: 100%;
 }
 
 @media (max-width: 1200px) {
@@ -983,10 +987,11 @@ template {
     margin: 0 18px 3px;
   }
   .slider {
-    height: 250px;
+    height: 179px;
   }
   .hotel__slider {
     margin-bottom: 20px;
+    margin-top: 18px;
   }
 }
 /*# sourceMappingURL=style.css.map */
