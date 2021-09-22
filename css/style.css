@@ -681,6 +681,7 @@ template {
 
 .booking {
   background-color: #0A223D;
+  font-family: Nunito;
   color: #ffffff;
   border-radius: 8px;
   width: 350px;
@@ -814,11 +815,8 @@ template {
   overflow: hidden;
 }
 
-#yandexmap {
-  width: 347px;
-  height: 213px;
-  border-radius: 10px;
-  overflow: hidden;
+.map__google {
+  width: 100%;
 }
 
 .newsletter {
@@ -1090,8 +1088,12 @@ template {
     margin-bottom: 20px;
     margin-top: 18px;
   }
-  #yandexmap {
-    width: 100%;
+  .booking {
+    margin-top: 2px;
+  }
+  .map {
+    height: 172px;
+    margin-bottom: 46px;
   }
   .newsletter {
     padding: 76px 0 83px 0;
