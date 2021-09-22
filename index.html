@@ -11,7 +11,6 @@
     rel="stylesheet">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 
 </head>
 <body>
@@ -158,11 +157,13 @@
           <!-- /.booking -->
 
           <div class="map">
-            <div id="yandexmap"></div>
+            <iframe class="map__google"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1976.0206951306654!2d98.29468785388781!3d7.890738810250361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30503b7bfcd9f903%3A0xf7065fac1e3d7c48!2sDoubleTree%20by%20Hilton!5e0!3m2!1sru!2sru!4v1632306423136!5m2!1sru!2sru"
+              height="213" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
           </div>
             
 
-          <!-- /.yandexmap -->
+          <!-- /.map -->
         </div>
         <!-- /.hotel-right -->
       </div>
@@ -182,6 +183,12 @@
       </form>
     </div>
     <!-- /.newsletter-wrapper -->
+  </section>
+  <section class="reviews">
+    <div class="container">
+      <h2 class="section-title">What people think about us</h2>
+    </div>
+    <!-- /.container -->
   </section>
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>

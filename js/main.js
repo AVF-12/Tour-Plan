@@ -13,12 +13,3 @@ const swiper = new Swiper('.swiper', {
   },
 });
 
-var map;
-function initMap ()
-  {
-  map = new ymaps.Map("yandexmap", {
-    center: [7.838231, 98.298906],
-    zoom: 16
-    });
-  }
-  ymaps.ready(initMap);
