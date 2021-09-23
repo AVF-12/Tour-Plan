@@ -807,21 +807,6 @@ template {
   cursor: pointer;
 }
 
-.map {
-  width: 347px;
-  height: 213px;
-  border-radius: 10px;
-  overflow: hidden;
-}
-
-.map__google {
-  width: 100%;
-}
-
-.map__yandex {
-  width: 100%;
-}
-
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -996,6 +981,9 @@ template {
   .hotel__slider {
     margin-bottom: 20px;
     margin-top: 18px;
+  }
+  #yandexmap {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */

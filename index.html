@@ -11,6 +11,8 @@
     rel="stylesheet">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+
 </head>
 <body>
   <header class="navbar">
@@ -154,11 +156,12 @@
             <button class="button booking__button">View Other Options</button>
           </div>
           <!-- /.booking -->
-          <div class="map">
-            <script class="map__yandex" type="text/javascript" charset="utf-8" async
-              src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af8d9f0d291151a1606dce4dd71a11559e92372b89cae610f0e3df96e04457e64&amp;width=347&amp;height=213&amp;lang=ru_RU&amp;scroll=true"></script>
-          </div>
-          <!-- /.map -->
+
+            <div id="yandexmap">
+            
+            </div>
+
+          <!-- /.yandexmap -->
         </div>
         <!-- /.hotel-right -->
       </div>
@@ -170,3 +173,5 @@
   <script src="js/main.js"></script>
 </body>
 </html>
+
+
