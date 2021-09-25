@@ -13,9 +13,15 @@
     width: 230px
     height: 230px
 @media (max-width: 992px)
-  .container,
-  .newsletter-wrapper
+  .container
     max-width: 700px
+  .newsletter
+    padding: 62px 0 66px 0
+    &-wrapper
+      max-width: 636px
+    &__title
+      margin-top: 25px
+      line-height: 22px
   .logo
     width: 132px
   .search
@@ -33,6 +39,13 @@
         font-size: 12px
         line-height: 15px
   .hotel
+    padding-bottom: 69px
+    &-info
+      &__offer
+        margin-left: 15px
+      &__rating
+        margin-top: -6px
+        margin-right: 0px
     &-description
       margin-top: -3px
     &-grid
@@ -45,12 +58,29 @@
       width: 100%
   .booking
     width: 340px
+    padding-left: 23px
+    padding-right: 22px
   .map
     width: 340px
-    .reviews
-      &-slider
-        &__item
-          max-width: 580px
+  .reviews
+    padding: 22px 0 21px 0
+    &__title
+      margin-top: 26px
+      margin-bottom: 46px
+      font-size: 30px
+    &-slider
+      &__rating
+        img
+          margin: 0 1px
+      &__item
+        padding: 0 123px 50px
+      &__button
+        &--prev
+          padding-left: 26px
+          margin-top: 12px
+        &--next
+          padding-right: 25px
+          margin-top: 12px
   .activities
     &-wrapper
       flex-wrap: wrap
@@ -89,6 +119,7 @@
   .stars
     flex-basis: auto
   .hotel
+    margin-bottom: 69px
     &-right
       flex-direction: column
       min-height: 450px
@@ -111,9 +142,6 @@
       width: 100%
       margin-top: 8px
       height: 350px
-.booking
-  padding-left: 23px
-  padding-right: 23px
   .map
     width: 100%
   .newsletter
@@ -145,6 +173,7 @@
     width: 49%
     height: 255px
 @media (max-width: 576px)
+
   .navbar
     &-top
       padding: 22px 0
@@ -156,13 +185,15 @@
   .stars
     margin: 0 18px 3px
   .hotel
+    margin-bottom: 0
+    padding-bottom: 0
     &__slider
       margin-bottom: 20px
       margin-top: 18px
     &-slider
-      height: 250px
+      height: 180px
   .booking
-    margin-top: 2px
+    width: 281px
   .map
     height: 172px
     margin-bottom: 46px
@@ -174,5 +205,5 @@
       margin-bottom: 37px
   .subscribe
     width: 100%
-.card
-  width: 100%
+  .card
+    width: 100%
