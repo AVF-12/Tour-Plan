@@ -887,7 +887,7 @@ template {
 }
 
 .activities {
-  padding: 60px 0 98px 0;
+  padding: 22px 0 98px 0;
 }
 .activities__title {
   font-style: normal;
@@ -1082,16 +1082,19 @@ template {
   .reviews-slider__item {
     padding: 0 64px 50px;
   }
+  .activities {
+    padding: 59px 0 98px;
+  }
   .activities-wrapper {
     flex-wrap: wrap;
   }
   .activities__card {
-    margin-bottom: 20px;
+    margin-bottom: 18px;
   }
 
   .card {
     width: 340px;
-    height: 250px;
+    height: 257px;
   }
 }
 @media (max-width: 767px) {
@@ -1278,6 +1281,15 @@ template {
   .reviews-slider__button--next {
     margin-top: -15px;
     margin-right: -88px;
+  }
+
+  .activities__title {
+    font-size: 18px;
+    margin-top: 32px;
+    margin-bottom: 33px;
+  }
+  .activities__card {
+    margin-bottom: 23px;
   }
 
   .card {
