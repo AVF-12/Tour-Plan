@@ -469,7 +469,7 @@ template {
 
 .hotel {
   padding-top: 17px;
-  padding-bottom: 82px;
+  padding-bottom: 70px;
 }
 .hotel-info {
   display: flex;
@@ -699,7 +699,7 @@ template {
 
 .newsletter {
   position: relative;
-  padding: 68px 0 58px 0;
+  padding: 80px 0 67px 0;
   background-image: url(../img/newsletter-bg.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -722,27 +722,27 @@ template {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 663px;
+  max-width: 727px;
   margin: auto;
 }
 .newsletter-title {
   color: #ffffff;
   font-style: normal;
   font-weight: 300;
-  font-size: 21px;
+  font-size: 23px;
   line-height: 30px;
 }
 .newsletter-title__strong {
   display: block;
-  font-size: 33px;
+  font-size: 36px;
   line-height: 45px;
   text-transform: uppercase;
 }
 
 .subscribe {
   position: relative;
-  width: 318px;
-  height: 50px;
+  width: 347px;
+  height: 55px;
   border-radius: 4px;
   overflow: hidden;
 }
@@ -755,13 +755,13 @@ template {
   padding-right: 75px;
   font-style: normal;
   font-weight: 300;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 18px;
 }
 .subscribe__button {
   position: absolute;
   font-size: 11px;
-  min-width: 59px;
+  min-width: 62px;
   right: 0;
   top: 0;
   height: 100%;
@@ -771,7 +771,7 @@ template {
 }
 
 .reviews {
-  padding: 22px 0 70px 0;
+  padding: 10px 0 70px 0;
 }
 .reviews__title {
   font-style: normal;
@@ -834,11 +834,13 @@ template {
   background-image: url(../img/arrow-prev-secondary.svg);
   left: 0;
   padding-left: 58px;
+  margin-top: -2px;
 }
 .reviews-slider__button--next {
   background-image: url(../img/arrow-next-secondary.svg);
   right: 0;
   padding-right: 58px;
+  margin-top: -2px;
 }
 .reviews-slider__profile {
   display: flex;
@@ -897,6 +899,62 @@ template {
 }
 .activities-wrapper {
   display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 24px 26px;
+  width: 255px;
+  height: 255px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #0A223D 99.85%);
+  z-index: -1;
+}
+.card__image {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -2;
+}
+.card__title {
+  margin-top: auto;
+  margin-bottom: 18px;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+}
+.card__button {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #ffffff;
+  padding: 7px 22px;
+  border: none;
+  background-color: #EC1F46;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 @media (max-width: 1200px) {
@@ -926,14 +984,26 @@ template {
   }
 
   .newsletter {
-    padding: 62px 0 66px 0;
+    padding: 62px 0 75px 0;
   }
   .newsletter-wrapper {
-    max-width: 636px;
+    max-width: 700px;
   }
   .newsletter__title {
-    margin-top: 25px;
+    margin-top: 37px;
     line-height: 22px;
+  }
+
+  .subscribe {
+    width: 350px;
+    height: 55px;
+    margin-top: 12px;
+  }
+  .subscribe__input {
+    font-size: 14px;
+  }
+  .subscribe__button {
+    min-width: 65px;
   }
 
   .logo {
@@ -960,7 +1030,7 @@ template {
   }
 
   .hotel {
-    padding-bottom: 69px;
+    padding-bottom: 57px;
   }
   .hotel-info__offer {
     margin-left: 15px;
@@ -996,28 +1066,22 @@ template {
   }
 
   .reviews {
-    padding: 22px 0 21px 0;
+    padding: 11px 0 21px 0;
   }
   .reviews__title {
     margin-top: 26px;
     margin-bottom: 46px;
     font-size: 30px;
   }
+  .reviews-slider {
+    max-width: 579px;
+  }
   .reviews-slider__rating img {
     margin: 0 1px;
   }
   .reviews-slider__item {
-    padding: 0 123px 50px;
+    padding: 0 64px 50px;
   }
-  .reviews-slider__button--prev {
-    padding-left: 26px;
-    margin-top: 12px;
-  }
-  .reviews-slider__button--next {
-    padding-right: 25px;
-    margin-top: 12px;
-  }
-
   .activities-wrapper {
     flex-wrap: wrap;
   }
@@ -1027,7 +1091,7 @@ template {
 
   .card {
     width: 340px;
-    height: 230px;
+    height: 250px;
   }
 }
 @media (max-width: 767px) {
@@ -1162,6 +1226,9 @@ template {
     margin-bottom: 0;
     padding-bottom: 0;
   }
+  .hotel-grid {
+    margin-bottom: -7px;
+  }
   .hotel__slider {
     margin-bottom: 20px;
     margin-top: 18px;
@@ -1180,14 +1247,37 @@ template {
   }
 
   .newsletter {
-    padding: 76px 0 83px 0;
+    padding: 42px 0 83px 0;
   }
-  .newsletter__title {
-    margin-bottom: 37px;
+  .newsletter-title {
+    font-size: 20px;
+    margin-bottom: 23px;
+  }
+  .newsletter-title__strong {
+    font-size: 30px;
   }
 
   .subscribe {
     width: 100%;
+  }
+  .subscribe__input {
+    padding-left: 21px;
+  }
+
+  .reviews__title {
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 29px;
+    margin-bottom: 40px;
+    padding: 0 40px;
+  }
+  .reviews-slider__button--prev {
+    margin-top: -15px;
+    margin-left: -92px;
+  }
+  .reviews-slider__button--next {
+    margin-top: -15px;
+    margin-right: -88px;
   }
 
   .card {
