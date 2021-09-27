@@ -901,6 +901,18 @@ template {
   display: flex;
   justify-content: space-between;
 }
+.activities__card-1 {
+  order: 1;
+}
+.activities__card-2 {
+  order: 2;
+}
+.activities__card-3 {
+  order: 3;
+}
+.activities__card-4 {
+  order: 4;
+}
 
 .card {
   position: relative;
@@ -935,7 +947,7 @@ template {
      object-fit: cover;
   z-index: -2;
 }
-.card__title {
+.card__title-curious, .card__title-gymkhana, .card__title-tamarind, .card__title-marine {
   margin-top: auto;
   margin-bottom: 18px;
   color: #ffffff;
@@ -943,6 +955,12 @@ template {
   font-weight: bold;
   font-size: 16px;
   line-height: 20px;
+}
+.card__title-curious {
+  max-width: 160px;
+}
+.card__title-tamarind {
+  max-width: 162px;
 }
 .card__button {
   font-style: normal;
@@ -1095,13 +1113,31 @@ template {
   .activities-wrapper {
     flex-wrap: wrap;
   }
-  .activities__card {
+  .activities__card-1, .activities__card-2, .activities__card-3, .activities__card-4 {
     margin-bottom: 18px;
+  }
+  .activities__card-1 {
+    order: 1;
+  }
+  .activities__card-2 {
+    order: 2;
+  }
+  .activities__card-3 {
+    order: 3;
+  }
+  .activities__card-4 {
+    order: 4;
   }
 
   .card {
     width: 340px;
     height: 257px;
+  }
+  .card__title-gymkhana {
+    max-width: 162px;
+  }
+  .card__title-marine {
+    max-width: 205px;
   }
 }
 @media (max-width: 767px) {
@@ -1295,8 +1331,20 @@ template {
     margin-top: 32px;
     margin-bottom: 33px;
   }
-  .activities__card {
+  .activities__card-1, .activities__card-2, .activities__card-3, .activities__card-4 {
     margin-bottom: 23px;
+  }
+  .activities__card-1 {
+    order: 1;
+  }
+  .activities__card-2 {
+    order: 3;
+  }
+  .activities__card-3 {
+    order: 2;
+  }
+  .activities__card-4 {
+    order: 4;
   }
 
   .card {

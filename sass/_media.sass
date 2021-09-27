@@ -77,7 +77,6 @@
       margin-bottom: 46px
       font-size: 30px
     &-slider
-
       &__rating
         img
           margin: 0 1px
@@ -95,11 +94,24 @@
     padding: 59px 0 98px
     &-wrapper
       flex-wrap: wrap
-    &__card
+    &__card-1, &__card-2, &__card-3, &__card-4
       margin-bottom: 18px
+    &__card-1
+      order: 1
+    &__card-2
+      order: 2
+    &__card-3
+      order: 3
+    &__card-4
+      order: 4
   .card
     width: 340px
     height: 257px
+    &__title
+      &-gymkhana
+        max-width: 162px
+      &-marine
+        max-width: 205px
 @media (max-width: 767px)
   .container
     max-width: 576px
@@ -242,7 +254,15 @@
       font-size: 18px
       margin-top: 32px
       margin-bottom: 33px
-    &__card
+    &__card-1, &__card-2, &__card-3, &__card-4
       margin-bottom: 23px
+    &__card-1
+      order: 1
+    &__card-2
+      order: 3
+    &__card-3
+      order: 2
+    &__card-4
+      order: 4
   .card
     width: 100%
