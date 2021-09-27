@@ -1073,15 +1073,22 @@ template {
     margin-bottom: 46px;
     font-size: 30px;
   }
-  .reviews-slider {
-    max-width: 579px;
-  }
   .reviews-slider__rating img {
     margin: 0 1px;
   }
   .reviews-slider__item {
     padding: 0 64px 50px;
+    max-width: 579px;
   }
+  .reviews-slider__button--prev {
+    padding-left: 25px;
+    margin-top: 12px;
+  }
+  .reviews-slider__button--next {
+    padding-right: 25px;
+    margin-top: 12px;
+  }
+
   .activities {
     padding: 59px 0 98px;
   }
