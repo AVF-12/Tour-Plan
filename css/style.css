@@ -1542,6 +1542,10 @@ template {
     padding: 22px 0;
   }
 
+  .search__input {
+    width: 220px;
+  }
+
   .breadcrumb-list {
     padding: 25px 0 7px;
   }
