@@ -15,6 +15,8 @@
   .footer
     &__input
       flex-basis: 100%
+    &__title
+      min-width: 247px
 @media (max-width: 992px)
   .container
     max-width: 700px
@@ -296,16 +298,21 @@
   .footer
     &__input
       flex-basis: 100%
+    &__title
+      font-size: 15px
+    &__form
+      width: 100%
 @media (max-width: 576px)
   .navbar
     &-top
-      padding: 22px 0
+      padding-top: 22px
+      padding-bottom: 30px
   .search
     &__input
-      width: 220px
+      width: 76%
   .breadcrumb
     &-list
-      padding: 25px 0 7px
+      padding: 11px 0 6px
   .logo
     width: 99px
   .stars
@@ -313,6 +320,9 @@
   .hotel
     margin-bottom: 0
     padding-bottom: 0
+    &-info
+      &__name
+        margin-top: 7px
     &-grid
       margin-bottom: -7px
     &__slider
@@ -411,16 +421,18 @@
         grid-row: 7
         grid-column: 1
     &__title
+      font-size: 18px
       &--mb-3
         margin-top: 2px
       &--send
-        margin-bottom: 14px
+        margin: -5px 0 15px
     &__text
       line-height: 21px
       margin-bottom: 20px
     &__item
       &--mb-2
         margin-left: 4px
+        margin-bottom: 22px
     &__icon
       margin-top: 6px
       margin-left: -2px
@@ -431,10 +443,9 @@
     &__disclamer
       &-wrapper
         display: block
-        padding-top: 26px
-        padding-bottom: 18px
+        padding: 26px 0 18px
       &-item
         margin: 0 0 10px 0
     &__menu
-      &--link
+      &-link
         margin: 0 2px
