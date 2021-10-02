@@ -16,7 +16,8 @@
     &__input
       flex-basis: 100%
     &__title
-      min-width: 247px
+      max-width: 247px
+      font-size: 15px
 @media (max-width: 992px)
   .container
     max-width: 700px
@@ -118,7 +119,7 @@
       &-marine
         max-width: 205px
   .footer
-    padding-top: 72px
+    padding-top: 40px
     padding-bottom: 0
     &-wrapper
       grid-template-columns: repeat(7, 1fr)
@@ -132,6 +133,9 @@
       grid-column: span 2
       width: 97px
     &__social
+      &-links
+        margin-top: 29px
+        margin-left: -82px
       &-network
         grid-row: 1 / 2
         grid-column: span 4
@@ -143,6 +147,8 @@
       margin: 9px 0 0 0px
     &__title
       margin-bottom: 3px
+      &--inline
+        margin-top: 29px
       &--mb-3
         margin-top: 20px
       &--send
@@ -154,7 +160,7 @@
       margin-top: 27px
       margin-bottom: 24px
     &__ul
-      margin-top: 20px
+      margin-top: 17px
     &__legal
       grid-column: span 2
       margin: 9px 0px 0px -15px
@@ -163,7 +169,7 @@
       margin: 9px 0 0 -5px
     &__contact
       &-details
-        grid-column: span 5
+        grid-column: span 6
         grid-row: 3
       &-form
         grid-column: span 5
@@ -181,9 +187,8 @@
     width: 88%
   body
     padding-top: 78px
-    // overflow-y: hidden
   .navbar
-    &__mobile
+    &--mobile
       &--fixed
         position: fixed
         left: 0
@@ -205,13 +210,15 @@
       left: 0
       right: 0
       bottom: 0
-      top: 78px
-      padding-top: 30px
+      top: 87px
+      padding-top: 11px
       margin-top: -17px
       &--visible
         display: block
+        overflow-y: scroll
     &-menu
       flex-direction: column
+      padding-top: 23px
       &__item
         margin-bottom: 20px
         &--mobile
@@ -302,11 +309,26 @@
       font-size: 15px
     &__form
       width: 100%
+      display: flex
 @media (max-width: 576px)
   .navbar
     &-top
       padding-top: 22px
       padding-bottom: 30px
+    &__user
+      &--mobile
+        &--visible
+    &__search
+      &--mobile
+        &--visible
+          width: 113%
+          margin-left: -15px
+    &-menu
+      padding-top: 20px
+      &__item
+        &--mobile
+          &--visible
+            margin-bottom: 27px
   .search
     &__input
       width: 76%
@@ -382,7 +404,7 @@
   .card
     width: 100%
   .footer
-    padding-top: 68px
+    padding-top: 38px
     padding-bottom: 0
     &-wrapper
       grid-template-columns: 1fr
@@ -422,12 +444,15 @@
         grid-column: 1
     &__title
       font-size: 18px
+      &--inline
+        margin-top: 0
       &--mb-3
         margin-top: 2px
       &--send
         margin: -5px 0 15px
     &__text
       line-height: 21px
+      margin-top: 24px
       margin-bottom: 20px
     &__item
       &--mb-2
