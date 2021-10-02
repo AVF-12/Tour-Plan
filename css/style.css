@@ -1342,7 +1342,6 @@ template {
   }
   .footer__social-links {
     margin-top: 29px;
-    margin-left: -82px;
   }
   .footer__social-network {
     grid-row: 1/2;
@@ -1357,9 +1356,11 @@ template {
   }
   .footer__title {
     margin-bottom: 3px;
+    font-size: 18px;
   }
   .footer__title--inline {
     margin-top: 29px;
+    font-size: 18px;
   }
   .footer__title--mb-3 {
     margin-top: 20px;
@@ -1765,7 +1766,14 @@ template {
     min-width: 26px;
   }
   .footer__message {
-    margin-bottom: 44px;
+    margin-bottom: 15px;
+  }
+  .footer__button {
+    order: 1;
+  }
+  .footer__info {
+    width: 100%;
+    margin-bottom: 15px;
   }
   .footer__disclamer-wrapper {
     display: block;
