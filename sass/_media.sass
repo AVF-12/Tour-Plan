@@ -315,7 +315,6 @@
 
     &-wrapper
       grid-template-columns: 1fr
-
     &__logo
       grid-row: 1
       grid-column: 1
@@ -385,7 +384,10 @@
     &__menu
       &-link
         margin: 0 2px
-
+  .modal
+    &__dialog
+      &--visible
+        overflow-y: scroll
 @media (max-width: 576px)
   .navbar
     &-top
