@@ -1806,6 +1806,9 @@ template {
   .hotel-info__name {
     margin-top: 7px;
   }
+  .hotel-info__thankyou {
+    margin-bottom: 20px;
+  }
   .hotel-grid {
     margin-bottom: -7px;
   }
